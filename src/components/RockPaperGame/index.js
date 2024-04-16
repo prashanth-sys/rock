@@ -146,9 +146,36 @@ class RockPaperGame extends Component {
               SCISSORS
             </h1>
           </div>
+          <div>
+            {result && (
+              <div className="result-emoji-show-case">
+                {result === 'YOU WON' && (
+                  <img
+                    src="https://res.cloudinary.com/dlsuy2qn2/image/upload/v1713252943/Emoji_1_lwlqgm.png"
+                    alt="Smiling face with star eyes"
+                    className="result-emoji-show"
+                  />
+                )}
+                {result === 'IT IS DRAW' && (
+                  <img
+                    src="https://res.cloudinary.com/dlsuy2qn2/image/upload/v1713253421/Vector_2_mfxirc.png"
+                    alt="Face without mouth"
+                    className="result-emoji-show"
+                  />
+                )}
+                {result === 'YOU LOSE' && (
+                  <img
+                    src="https://res.cloudinary.com/dlsuy2qn2/image/upload/v1713253521/Emoji_2_acby57.png"
+                    alt="Face without mouth"
+                    className="result-emoji-show"
+                  />
+                )}
+              </div>
+            )}
+          </div>
           <div className="score-container">
             <p className="score-heading">score</p>
-            <p className="scores-heading">{count}0</p>
+            <p className="scores-heading">{count}</p>
           </div>
         </div>
         <h1 className="pick">Let’s pick</h1>
@@ -196,6 +223,31 @@ class RockPaperGame extends Component {
                 </div>
               </div>
               <div className="play-again-container">
+                {result && (
+                  <div className="result-emoji-show-case">
+                    {result === 'YOU WON' && (
+                      <img
+                        src="https://res.cloudinary.com/dlsuy2qn2/image/upload/v1713252943/Emoji_1_lwlqgm.png"
+                        alt="won emoji"
+                        className="result-emoji-show"
+                      />
+                    )}
+                    {result === 'IT IS DRAW' && (
+                      <img
+                        src="https://res.cloudinary.com/dlsuy2qn2/image/upload/v1713253421/Vector_2_mfxirc.png"
+                        alt="draw emoji"
+                        className="result-emoji-show"
+                      />
+                    )}
+                    {result === 'YOU LOSE' && (
+                      <img
+                        src="https://res.cloudinary.com/dlsuy2qn2/image/upload/v1713253521/Emoji_2_acby57.png"
+                        alt="lose emoji"
+                        className="result-emoji-show"
+                      />
+                    )}
+                  </div>
+                )}
                 <button
                   type="button"
                   className="playButton"

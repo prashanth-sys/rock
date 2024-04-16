@@ -16,6 +16,7 @@
   color: #ffffff;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .game-page-heading {
@@ -128,7 +129,7 @@
   width: 400px;
   height: 400px;
   color: #ffffff;
-  margin-top: 0px;
+  margin: 0px;
 }
 .your-custom-class {
   align-self: flex-end;
