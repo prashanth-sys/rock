@@ -30,7 +30,7 @@ class RockPaperGame extends Component {
     selectedImage: null,
     opponentImage: null,
     result: null,
-    isModelOpen: false, // State to manage modal open/close
+    isModelOpen: false,
   }
 
   componentDidUpdate(prevProps, prevState) {
@@ -196,7 +196,7 @@ class RockPaperGame extends Component {
                 >
                   <img
                     src={image.imageUrl}
-                    alt={image.id.toLowerCase()}
+                    alt={image.id}
                     className="r-p-s-image"
                   />
                 </button>
